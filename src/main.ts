@@ -16,6 +16,8 @@ async function bootstrap() {
     })
   )
 
+  console.log(process.env.MONGO_URI);
+
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
